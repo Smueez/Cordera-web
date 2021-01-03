@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "corderaweb",
+  "private_key_id": "1da254a3b7f9d09bf6cd67aa71d7fb17723410ea",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDFLd6JI3dKD3Tw\ndv9aC5QAT/1hJ//EV1wzhf6RpTJq0mwdESiOVDf3dLd5+X9gZTj7XeBf3YAoSRhO\nTjPn6wdMZbM//UFANT8viDYeTles5FWD0LOv+y5gN86Rd582NGdP2FGqwRnE6ocT\ncmfo8FpP629bcOmZMlSwVOt7AZiPhuXJa1UGCBMSsw6mGFNcJ+y5PeF5f2PPnFvK\nmXU6So+BUSep67fx2qTXfH9aORrAWDNzHP+AsqL8i4gk+wqZbCpdiM2xYlDZPgtR\nYROyc7snHYgt0y6FHI9Yt8JG2ZsYpLCQIp7qwWWuimQjJQcWRNCPcPNV1AlP+K66\n8FQwkSIhAgMBAAECggEAD2h8c5B9LaEkFPdjkGSHufeGOA2hX7Uo7BDMOhLj6/OK\nBcJ1vhuILRLmlIZB5SU7zO7CzhL3xQ4jM1lKlpSn4xkuZvFyJCOVDrCQ9BDQqp7E\nLPMF25pf/x5VSspDe3+gVB22EgcZbakbCZK+2nXPxN+DuexKoNFNS2MzbI8NHif8\nBALuvMt8D/YpcbNqyz65EzSC816hg+AFssZGPcOT7m2WGQv2zJCpN1pVLff3vdDo\nIbj6A/XLR23lVRiXYqVFUzbbfO7JTOCEB92J3+YrzMGEh5nacCtpw1KBvgojEPGT\nmkF/khfur50rFT4xIKtndqOi1nJyuYScSKGzvpzo/QKBgQDv3iHkEpYlhb0T8BFP\ntWkRXrtSx1W03eaYxZgt5Yh7JcA5PUmf/jGDvy9VL07YfMXmu94qdWoEZ7mPgVnO\ne30x5P/J0XbZVatYTP2flIN/uu1+2IWvnQSQ4xZRfROMc7E6zUWgj7qJT+3kf1cz\nw4x1VWCA5PanljdgNMsG/Qy11QKBgQDScMHDC2cwDLGGmKQ55HrIT9IeIR6BHhjo\nrto2Xu1b89DKGgAQ2iGiwzhBdZoa+/550sVTMQJMtxP99pnTN9taEqA/1UI4tWhW\n2HiC7c90hlpWO8b9Nk6b6MbKbS1joc6hEk0jKsA9NMQt1tpQ/9a604jIBA1S7lAh\nvD7myRXlHQKBgQDGrmvMCkkr01cGCLeOGmlo5dqrekjXg2XZ7PFcMt+VgXNy9fzh\n9R72TYnbOVBJqTATKlGfQZoLBA+DelT03vyYM2JbvJCA/KDshvkdEVrKlf7aLmat\nS5XYnQCDhuKGV93ZIuYlVGfiDL6zoXaNfc/98DX7DavwrFA59ACnTTsV8QKBgApN\nCq8Jd9uaQ3ZbMm7DCF+VyKtA48VeO8noBTZ0HxpJLQc3jplElDDrbW2G3CxF+Ybt\nEkuoMnye2ZOs5oq4STx3fPCi98Le3mSh5AREr8r8aJ+f/XWXmvF2y4RNI9OksACi\nbLQz+4UDeDbmNXmRjGlIwYFI8X4FvFZqaInTfgbhAoGBALTdC7Yv4DMl2g4UrcJT\nmuNDIpwte8NGJoLKjPH7pZno4Ki1ZmM+dOEAPCtJL9vN6WIl5HD08egzLrtEpGBa\nSX7AT/PJ6sm2WQuThQt8jjzcnn8a9t5k1JBUXE8xbVApLcCOGOyiad1oQpP0ot93\nnuOLP8eMt6f3bZWWwT7Gbj5h\n-----END PRIVATE KEY-----\n",
+  "client_email": "corderaweb@corderaweb.iam.gserviceaccount.com",
+  "client_id": "108913991697340068502",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/corderaweb%40corderaweb.iam.gserviceaccount.com"
+}

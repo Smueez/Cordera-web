@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cordera Admin</title>
+  <meta name="viewport" content="width=device-widte, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-analytics.js"></script>
+
+</head>
+<body>
+	<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyCl9v3eYX7l9trh_2c04KWV3WIJqK58730",
+    authDomain: "chordera-e5018.firebaseapp.com",
+    databaseURL: "https://chordera-e5018.firebaseio.com",
+    projectId: "chordera-e5018",
+    storageBucket: "chordera-e5018.appspot.com",
+    messagingSenderId: "909502784822",
+    appId: "1:909502784822:web:58bcd429cd1cb40dc27f97",
+    measurementId: "G-94QY1FT86R"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
+</script>
+<script type="text/javascript">
+  function readURL(input) {
+    if (input.files && input.files[0]) {
+      var reader = new FileReader();
+      document.getElementById('selectedImage').style.display = 'block';
+      reader.onload = function (e) {
+        console.log(e.target.result);
+        $('#selectedImage')
+        .attr('src', e.target.result)
+        .width(60)
+        .height(60);
+      };
+
+      reader.readAsDataURL(input.files[0]);
+    }
+  }
+  function readURLCollection(input) {
+    if (input.files && input.files[0]) {
+      var reader = new FileReader();
+      document.getElementById('selectedCollectoinImage').style.display = 'block';
+      reader.onload = function (e) {
+        console.log(e.target.result);
+        $('#selectedCollectoinImage')
+        .attr('src', e.target.result)
+        .width(60)
+        .height(60);
+      };
+
+      reader.readAsDataURL(input.files[0]);
+    }
+  }
+</script>
+
+<!-- Modal -->
+
+
+
+  <div class="container" style="width:100%">
+    <div class = "row">
+     <div class="col-sm-2"></div>
+     <div class="col-sm-8" style="text-align: center;">
+      <img src="{{url_for('static',filename = 'image/chorderalogo.png')}}" style="height: 300px; width: 300px">
+      <br>
+      <h2>Admin Panel</h2>
+      <br>
+      <form method ="POST" action = "http://127.0.0.1:5000/data">
+        <h4>Song Name</h4>
+        <input type="text" id="songName" name="songName" style="width: 45%" placeholder="Song Name.."/><br>
+
+        <h4>Artist Name</h4>
+        <input type="text" id="artistName" name="artistName" style="width: 45%" placeholder="Artist Name.."/><br><br>
+
+        <dialog id="myDialog">This is an open dialog window</dialog>
+
+        <label for="collection">Select Collection:</label>
+        <select name="collection" id="collection" style="width: 20%">
+
+          {% for doc in collection %}
+          <option value="{{doc['id']}}">{{doc['value']}}</option>
+          {% endfor %}
+        </select>
+
+        <br>
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" style="padding-bottom: 0px;background-color: white;color: black;padding-top: 0px;font-size: 12px;">Add more</button>
+        <br>
+        <img src="#" id="selectedImage" style="height: 150px; width: 350px; display: none; margin: auto;">
+        <br>
+        <input type="file" name="imageUpload" id="imageUpload" accept="image/" onchange="readURL(this);" style="margin: auto;">
+        <br>
+        <h4>Song Duration</h4>
+        <input type="number" name = "songDuration" id="songDuration" style="width: 45%" placeholder="Song Duration.."/><br>
+
+        <h4>Song Chords</h4>
+        <textarea name="songChords" id="songChords" name="songChords" rows="20" cols="50" placeholder="Paste your chords with lyrics here..." style="width: 100%;" ></textarea><br>
+
+        <h4>Youtube Id</h4>
+        <input type="text" style="width: 45%" id="youtubeLink" name="youtubeLink" placeholder="Youtube Id..."/><br>
+        <h4>Key words</h4>
+        <input type="text" style="width: 45%" id="keyWords" name="keyWords" placeholder="Type keywords with coma (,)"/><br><br>
+        <button type="submit" class="btn btn-success" name="submit" value="submit" onclick="valueFromHTML()">Submit</button>
+      </form>
+
+    </div>
+    <div class="col-sm-2"></div>
+  </div><br>
+
+</div>
+</body>
+</html>
